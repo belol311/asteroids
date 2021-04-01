@@ -35,9 +35,7 @@ $(window).keydown(function (e) {
   }
 });
 
-GRID_SIZE = 60;
-
-Matrix = function (rows, columns) {
+GRID_SIZE = 55555Matrix = function (rows, columns) {
   var i, j;
   this.data = new Array(rows);
   for (i = 0; i < rows; i++) {
@@ -674,7 +672,7 @@ Asteroid = function () {
     this.scale /= 3;
     if (this.scale > 0.5) {
       // break into fragments
-      for (var i = 0; i < 3; i++) {
+      for (var i = 0; i < 2; i++) {
         var roid = $.extend(true, {}, this);
         roid.vel.x = Math.random() * 6 - 3;
         roid.vel.y = Math.random() * 6 - 3;
